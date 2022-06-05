@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;400;500;600;700;800&family=UnifrakturMaguntia&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;    
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    height: 0.2rem;
+    background-color: black;    
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+
+.navegador{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 1.5rem;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;    
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    margin: 0 1.875rem;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+.logo img{    
+    width: 5rem;    
+}
+
+.portada{
+    width: 100%;
+    font-family: 'Smooch Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "title imagen"
+    "texto imagen"
+    "boton imagen";
+    justify-items: center;
+    align-items: center;
+}
+
+.marca{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3.75rem;
+    font-weight: 400; 
+    grid-area: title;    
+}
+
+.textoPortada{
+    text-align: center;
+    padding: 3rem 10rem;
+    font-size: 1.375rem;
+    grid-area: texto;
+}
+
+.imgPortada{
+    width: 22rem;
+    margin: 5rem;
+    grid-area: imagen;
+}
+
+.boton{
+    grid-area: boton;
+    width: 10rem;
+    padding: .625rem;
+    margin: .31rem;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5625rem;
+}
+
+.boton:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: darkgrey;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.pieDePagina{
+    display: flex; 
+    justify-content: center;
+    align-items: center;   
+}
+
+.redes{
+    list-style-type: none;
+    margin: 0 2rem;
+}
+
+.redes a{    
+    text-decoration: none;
+    color: black;
+}
+
+.mainContact{
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.125rem;    
+}
+
+.textContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.textContact h2{
+    font-size: 2.18rem;
+    padding: 0 15.62rem;
+}
+
+.textContact p{
+    padding: 9.37rem 15.62rem;
+}
+
+.formContact form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 16%;
+}
+
+.formContact form .campo, textarea{
+    width: 100%;
+    padding: .93rem .62rem;
+    margin-bottom: .62rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;        
+}
+
+.campo{
+    background-color: darkgray;    
+}
+
+.formContact textarea{
+    background-color: darkgrey;
+}
+
+.btnEnviar{
+    align-self: center;
+    width: 20%;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.25rem;    
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    padding: .31rem;
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    background-color: darkgrey;
+    color: black;
+    font-weight: bold;
+}
+
+
+.preguntas{
+    margin: 3rem 0;
+    width: 100%;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.375rem;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+.preguntas h2{
+    margin: 4rem;
+    text-decoration: underline;
+    grid-column: 1 / span 13;
+    text-align: center;
+}
+
+.preguntas h3{
+    text-decoration: underline;
+    margin: 2rem;
+}
+
+.preguntas p{
+    padding: .31rem;
+}
+
+.izquierda{    
+    grid-column: 2 / span 6;
+}
+
+.derecha{
+    text-align: right;
+    grid-column: 7 / span 6;
+}
+
+.tienda{
+    display: grid;
+    grid-template-rows: 15%, auto;
+}
+
+.listTienda ul{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    background-color:dimgray ;
+    font-size: 1.25rem;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+#tiendaCategorias{
+    display: none;
+}
+
+.listTienda ul li{
+    margin: 0 1.875rem;
+}
+
+.listTienda a{
+    color: black;
+    text-decoration: none;    
+}
+
+.galeriaTienda{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+}
+
+.galeriaTienda div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeriaTienda div img{    
+    width: 25rem;
+    height: 25rem;
+    margin: 3.125rem;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.galeriaTienda div img:hover{
+    border: solid black 10px;
+}
+
+.galeriaTienda div p{
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.nosotros{    
+    width: 100%;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.43rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros h1{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3.75rem;
+    font-weight: 400;
+    margin: 3rem 0;
+}
+
+.nosotros h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.nosotros img{
+    margin: 3rem;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.nosotros p{
+    margin: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.nosotros div{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.modelos{
+    order:2;
+}
+
+@media screen and (max-width: 380px) {
+
+    .logo{
+        flex-direction: column;
+    }
+
+    .navegador{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu{        
+        flex-direction: column;
+    }
+
+    .item{
+        font-size: 1.5rem;
+        margin: 0.6rem;       
+    }
+
+    .portada {
+        background-image: url(../Img/Portada.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "title"
+                             "texto"
+                             "boton";
+        justify-items: center;
+        align-items: center;
+    }    
+
+    .imgPortada{
+        display: none;
+    }    
+
+    .textoPortada{
+        padding: 0.5rem;
+    }
+
+    .itemTienda{
+        display: none;
+    }
+
+    #tiendaCategorias{
+        display: inline;
+    }
+
+    .galeriaTienda div img{
+        width: 19rem;
+    }    
+    
+    .mainContact{
+        grid-gap: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textContact p{
+        padding: 2rem;
+    }
+
+    .textContact h2{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .formContact form{
+        padding: 2rem;
+    }
+
+    .btnEnviar{
+        width: 7rem;
+    }
+        
+    .preguntas h2{
+        margin: 1rem;        
+        grid-column: 1 / span 13;
+        text-align: center;
+    }
+    
+    .preguntas h3{        
+        margin: 1rem;
+    }
+    
+    .preguntas p{
+        padding: .5rem;
+    }
+    
+    .izquierda{    
+        grid-column: 2 / span 11;
+    }
+    
+    .derecha{        
+        grid-column: 2 / span 11;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .pieDePagina{
+        flex-direction: column;
+    }
+
+    .redes{
+        font-size: 1.5rem;
+        margin: 0.6rem;
+    }    
+
+    .nosotros h1{
+        font-size: 2.5rem;    
+        margin: 0;
+    }
+
+    .nosotros h2{
+        font-size: 0.5rem;
+        margin: 0;
+    }
+
+    .nosotros p{
+        margin: 0;
+        line-height: 1rem;
+    }
+
+    .nosotros div{
+        flex-direction: column;        
+    }
+
+    .modelos{
+        width: 35%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        font-size: 25px;
+    }
+
+    .logo{
+        flex-direction: column;
+    }
+
+    .navegador{
+        height: auto;
+    }
+
+    .item{
+        font-size: 1.3rem;
+        margin: 0.6rem;       
+    }
+
+    .portada {
+        background-image: url(../Img/Portada.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }    
+
+    .imgPortada{
+        display: none;
+    }
+
+    .marca{
+        margin: 5rem;
+    }
+    
+    .textoPortada{
+        margin: 5rem 11rem;
+        padding: 0;
+    }
+
+    .btnShop{
+        margin: 5rem;
+        padding: 0;
+    }
+
+    .itemTienda{
+        display: none;
+    }
+
+    #tiendaCategorias{
+        display: inline;
+    }
+
+    .galeriaTienda div img{
+        width: 13.5rem;
+    }
+        
+    .mainContact{
+        grid-gap: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textContact p{
+        padding: 2rem;
+    }
+
+    .textContact h2{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .formContact form{
+        padding: 2rem;
+    }
+
+    .btnEnviar{
+        width: 7rem;
+    }
+        
+    .preguntas h2{
+        margin: 1rem;        
+        grid-column: 1 / span 13;
+        text-align: center;
+    }
+    
+    .preguntas h3{        
+        margin: 1rem;
+    }
+    
+    .preguntas p{
+        padding: .5rem;
+    }
+    
+    .izquierda{    
+        grid-column: 2 / span 11;
+    }
+    
+    .derecha{        
+        grid-column: 2 / span 11;
+    }
+
+    footer{
+        height: 3rem;
+    }
+
+    .redes{       
+        font-size: 1.3rem;
+        margin: 0.6rem;
+    }
+}
+
+
+@media screen and (max-width: 1450px) {
+    
+    .nosotros{       
+        font-size: 1.5rem;        
+    }
+    
+    .nosotros h2{
+        font-size: 2rem;
+    }
+    
+    .nosotros img{
+        border-radius: 50%;
+        width: 18.75rem;
+        height: 18.75rem;
+        object-fit: cover;
+    }
+    
+    .nosotros p{
+        text-align: center;
+        line-height: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .nosotros div{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 35rem;
+    } 
+
+    .modelos{
+        order: 2;
+    }
+
+    .preguntas, .izquierda, .derecha {
+        font-size: 1.7rem;
+    }
+
+    
+.mainContact{
+    font-size: 1.5rem;
+    grid-gap: 2rem;    
+}
+
+.textContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.textContact h2{
+    padding: 0;
+    margin: 0 5rem 3rem 5rem;
+}
+
+.textContact p{
+    padding: 0;
+    margin: 3rem 5rem;
+    
+}
+
+.btnEnviar{
+    width: 35%;
+}
+
+}
